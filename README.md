@@ -16,6 +16,8 @@ A simple website sharing a bit about me and some of my projects.
 
 This project is built with HTML, CSS, and JavaScript.
 
+![Portfolio screenshot](https://marvinmante.com/assets/portfolio.png)
+
 ## Features
 
 Currently supported features, include:
