@@ -32,4 +32,3 @@ Currently supported features, include:
 
 ### future features
 - link to a blog
-  
