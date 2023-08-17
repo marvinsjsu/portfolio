@@ -24,7 +24,6 @@ Currently supported features, include:
 - displays some of my front-end projects
 
 ### work-in-progress
-- highlight nav link corresponding to section
 - continue adding responsiveness details
 - display full-stack projects
 - animations on project image cards
