@@ -391,6 +391,8 @@ h2 {
 
 .project-image img {
   width: 100%;
+  max-width: 450px;
+  height: auto;
 }
 
 /* Footer */
