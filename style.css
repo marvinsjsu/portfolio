@@ -434,11 +434,7 @@ footer .link-container a:hover {
   text-decoration: none;
   color: var(--primary-color);
   transform: translateY(-1px);
-} 
-
-/* footer .link-container a {
-  margin-left: 12px;
-} */
+}
 
 /* Media Queries */
 
