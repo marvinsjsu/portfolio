@@ -1,8 +1,6 @@
 const lightClass = 'light';
 const darkClass = 'dark';
 const activeClass = 'active';
-const darkHeaderPos = 58;
-const lightHeaderPos = 45;
 
 const links = {
   home: 'home',
@@ -33,34 +31,20 @@ const activateLink = (linkName) => {
   }
 }
 
-window.onload = () => {
-
-  const homeSectionHeight = homeSection.offsetHeight;
+(() => {
   const aboutSectionHeight = aboutSection.offsetHeight;
   const projectsSectionHeight = projectsSection.offsetHeight;
 
+  activateLink(links.about);
+
   window.addEventListener('scroll', () => {
 
-    if (window.scrollY < homeSectionHeight) {
-      activateLink(links.home);
-    }
-
-    if (window.scrollY >= homeSectionHeight && window.scrollY < aboutSectionHeight) {
+    if (window.scrollY < aboutSectionHeight) {
       activateLink(links.about);
     }
 
     if (window.scrollY >= aboutSectionHeight && window.scrollY < projectsSectionHeight) {
       activateLink(links.projects);
     }
-
-    if (window.scrollY > darkHeaderPos) {
-      navEl.classList.remove(lightClass);
-      navEl.classList.add(darkClass);
-    }
-
-    if (window.scrollY < lightHeaderPos) {
-      navEl.classList.remove(darkClass);
-      navEl.classList.add(lightClass);
-    }
   });
-}
+})();

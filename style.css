@@ -384,6 +384,7 @@ h2 {
 }
 
 .project-summary p {
+  font-size: 15px;
   line-height: 2;
 }
 
@@ -436,6 +437,7 @@ footer {
   font-size: 16px;
   text-transform: uppercase;
   text-align: right;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
 footer .link-container {
@@ -445,6 +447,20 @@ footer .link-container {
   min-width: 280px;
   padding: 18px 24px;
 }
+
+footer .link-container a {
+  transition: all 0.4s linear;
+}
+
+footer .link-container a.active {
+  color: var(--primary-color);
+}
+
+footer .link-container a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+  transform: translateY(-1px);
+} 
 
 /* footer .link-container a {
   margin-left: 12px;
