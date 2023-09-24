@@ -11,24 +11,17 @@ const links = {
 };
 
 const navEl = document.getElementById('nav');
-const homeSection = document.getElementById('home');
 const aboutSection = document.getElementById('about');
 const projectsSection = document.getElementById('projects');
 
-const homeLink = document.querySelector('a.home');
 const aboutLink = document.querySelector('a.about');
 const projectsLink = document.querySelector('a.projects');
 
 const activateLink = (linkName) => {
-  homeLink.classList.remove(activeClass);
   aboutLink.classList.remove(activeClass);
   projectsLink.classList.remove(activeClass);
 
-  switch(linkName) {
-    case links.home: {
-      homeLink.classList.add(activeClass);
-      break;
-    }
+  switch (linkName) {
     case links.about: {
       aboutLink.classList.add(activeClass);
       break;
@@ -64,7 +57,7 @@ window.onload = () => {
       navEl.classList.remove(lightClass);
       navEl.classList.add(darkClass);
     }
-    
+
     if (window.scrollY < lightHeaderPos) {
       navEl.classList.remove(darkClass);
       navEl.classList.add(lightClass);

@@ -246,6 +246,7 @@ h2 {
 }
 
 .experience-item .experience-summary {
+  font-size: 15px;
   line-height: 2;
 }
 
@@ -278,7 +279,7 @@ h2 {
   font-family: Lexend, sans-serif;
   font-size: 18px;
   font-weight: 500;
-  margin: 24px 0 16px;
+  margin: 40px 0 16px;
 }
 
 .title-group {
@@ -388,7 +389,7 @@ h2 {
 
 .project-summary p .emoji {
   position: absolute;
-  margin-top: -12px;
+  margin-top: -9px;
   font-size: 24px;
 }
 
