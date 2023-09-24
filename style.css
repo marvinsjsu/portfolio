@@ -8,6 +8,7 @@
   --shadow-color: rgba(0, 0, 0, 0.2);
   --nav-bg-color: rgba(255, 255, 255, 0.9);
   --nav-dark-bg-color: #0d3b66;
+  /* --nav-dark-bg-color: #035099; */
   --container-bg-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -426,14 +427,24 @@ footer .link-container a {
   transition: all 0.4s linear;
 }
 
+footer .link-container a img {
+  position: relative;
+  top: 2px;
+}
+
 footer .link-container a.active {
   color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
 }
 
 footer .link-container a:hover {
   text-decoration: none;
   color: var(--primary-color);
   transform: translateY(-1px);
+}
+
+footer .link-container a.external-link:hover img {
+  filter: invert(27%) sepia(2%) saturate(2878%) hue-rotate(3deg) brightness(104%) contrast(2%);
 }
 
 /* Media Queries */
