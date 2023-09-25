@@ -8,6 +8,8 @@ const links = {
   projects: 'projects',
 };
 
+const isSafari = !!navigator.userAgent.match(/safari/i) && !navigator.userAgent.match(/chrome/i) && typeof document.body.style.webkitFilter !== "undefined" && !window.chrome;
+
 const navEl = document.getElementById('nav');
 const aboutSection = document.getElementById('about');
 const footerEl = document.getElementsByTagName('footer')[0];
@@ -37,6 +39,11 @@ const activateLink = (linkName) => {
   const projectsSectionHeight = projectsSection.offsetHeight;
 
   activateLink(links.about);
+
+  if (isSafari) {
+    footerEl.classList.add('safari-footer');
+  }
+
 
   window.addEventListener('scroll', () => {
 
