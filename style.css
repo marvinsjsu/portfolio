@@ -418,7 +418,7 @@ footer {
 footer .link-container {
   display: flex;
   justify-content: space-evenly;
-  width: 30%;
+  width: 100%;
   min-width: 280px;
   padding: 18px 24px;
 }
@@ -453,32 +453,16 @@ footer .link-container a.external-link:hover img {
   .project-image img {
     max-width: 450px;
   }
+
+  footer .link-container {
+    width: 30%;
+  }
 }
 
 @media screen and (min-width: 750px) {
   nav {
     padding: 20px;
     font-size: 20px;
-  }
-
-  /* Home Section */
-  h1 {
-    font-size: 77px;
-  }
-  
-  h2 {
-    font-size: 36px;
-  }
-
-  .social-icons {
-    padding: 24px 0;
-    opacity: 0.9;
-  }
-  
-  .social-icons a {
-    height: 48px;
-    width: 48px;
-    font-size: 48px;
   }
 }
 
@@ -513,26 +497,6 @@ footer .link-container a.external-link:hover img {
   nav.dark {
     font-size: 18px;
     padding: 14px;
-  }
-
-  /* Home Section */
-  h1 {
-    font-size: 100px;
-  }
-  
-  h2 {
-    font-size: 32px;
-  }
-
-  .social-icons {
-    padding: 24px 0;
-    opacity: 0.9;
-  }
-  
-  .social-icons a {
-    height: 42px;
-    width: 42px;
-    font-size: 42px;
   }
 
   #about,

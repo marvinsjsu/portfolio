@@ -10,6 +10,7 @@ const links = {
 
 const navEl = document.getElementById('nav');
 const aboutSection = document.getElementById('about');
+const footerEl = document.getElementsByTagName('footer')[0];
 const projectsSection = document.getElementById('projects');
 
 const aboutLink = document.querySelector('a.about');
