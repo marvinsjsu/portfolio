@@ -189,7 +189,7 @@ h2 {
   background-color: var(--secondary-color);
   margin-bottom: 24px;
   animation-name: pulsate-color;
-  animation-duration: 8s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
 }
 
@@ -538,8 +538,8 @@ footer .link-container a.external-link:hover img {
     outline-color: var(--secondary-color);
   }
   50% {
-    background-color: #f96b06;
-    outline-color: #f96b06;
+    background-color: #f48c42;
+    outline-color: var(--secondary-color);
   }
   100% {
     background-color: var(--secondary-color);
